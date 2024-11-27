@@ -3,22 +3,22 @@
 * Redirects the shortened URLs to the desired URL
 
 ## API
-* Create Short URL
-Endpoint: `POST /api/shorten`
-Request Body:
-`{
+* Create Short URL  
+Endpoint: `POST /api/shorten`  
+Request Body:  
+```{
   "url": "https://example.com/very/long/url"
-}`
+}```
 
-Response:
-`{
+Response:  
+```{
 "short_url": "http://localhost:5000/abc123",
 "short_code": "abc123"
-}`
+}```
 
-* Redirect to Original URL
-Endpoint: `GET /{short_code}`
-Response: 302 Redirect to original URL
+* Redirect to Original URL  
+Endpoint: `GET /{short_code}`  
+Response: 302 Redirect to original URL  
 
 ## Prerequisites
 The following should be installed:
